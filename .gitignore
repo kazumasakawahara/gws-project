@@ -1,0 +1,7 @@
+node_modules/
+*.log
+.DS_Store
+gws-mcp.config.json
+
+# Claude Code local settings
+.claude/settings.local.json

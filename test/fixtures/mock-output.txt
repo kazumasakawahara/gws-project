@@ -1,0 +1,9 @@
+[2024-03-07T12:00:00Z] Starting MCP server...
+Loading services: drive, gmail, calendar...
+{"jsonrpc":"2.0","id":1,"result":{"protocolVersion":"2024-11-05","capabilities":{"tools":{"listChanged":true}},"serverInfo":{"name":"gws","version":"0.7.0"}}}
+Warning: deprecated API detected
+{"jsonrpc":"2.0","method":"notifications/tools/list_changed"}
+
+{malformed json without closing
+{"jsonrpc":"2.0","id":2,"result":{"tools":[{"name":"drive_files_list","description":"List files"}]}}
+[info] Connection established

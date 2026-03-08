@@ -1,0 +1,14 @@
+services:
+  gws-mcp:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    volumes:
+      - gws-config:/root/.config/gws
+    environment:
+      - GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE=/root/.config/gws/credentials.json
+    tty: true
+    stdin_open: true
+
+volumes:
+  gws-config:

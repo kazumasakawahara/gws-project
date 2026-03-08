@@ -1,0 +1,27 @@
+{
+  "name": "gws-mcp-server",
+  "version": "1.0.0",
+  "description": "Cross-platform MCP server wrapper for Google Workspace CLI",
+  "main": "src/gws-mcp-server.js",
+  "bin": {
+    "gws-mcp": "./bin/gws-mcp"
+  },
+  "scripts": {
+    "start": "node bin/gws-mcp",
+    "test": "node --test test/*.test.js",
+    "config:gemini": "node src/config-template.js gemini",
+    "config:claude": "node src/config-template.js claude"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "google-workspace",
+    "mcp",
+    "model-context-protocol",
+    "gws",
+    "claude",
+    "gemini"
+  ],
+  "license": "MIT"
+}

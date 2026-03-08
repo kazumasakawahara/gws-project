@@ -1,0 +1,9 @@
+# Gemini CLI MCP configuration
+mcpServers:
+  gws:
+    command: "node"
+    args: ["/Users/k-kawahara/gws-project/bin/gws-mcp"]
+    # Optional: override services and log level via environment variables
+    # env:
+    #   GWS_MCP_SERVICES: "drive,gmail,calendar,sheets,docs,tasks"
+    #   GWS_MCP_LOG_LEVEL: "debug"

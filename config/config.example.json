@@ -1,0 +1,4 @@
+{
+  "services": "drive,gmail,calendar,sheets,docs,tasks",
+  "logLevel": "info"
+}
