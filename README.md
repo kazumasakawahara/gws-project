@@ -1,8 +1,12 @@
 # gws-mcp-server
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 Google Workspace CLI を MCP (Model Context Protocol) サーバーとして公開するクロスプラットフォーム対応ラッパー。
 
 Claude Desktop、Gemini CLI などの AI エージェントから Google Workspace (Drive, Gmail, Calendar, Sheets, Docs, Tasks) を操作できます。
+
+> **初めての方へ**: プログラミング経験がなくても大丈夫です。[セットアップガイド (日本語)](docs/SETUP_GUIDE.md) に沿って進めてください。
 
 ## セットアップ
 
@@ -19,7 +23,7 @@ gws auth login
 ### macOS / Linux
 
 ```bash
-git clone <this-repo> gws-project
+git clone https://github.com/kazumasakawahara/gws-project.git
 cd gws-project
 chmod +x bin/gws-mcp
 
@@ -30,7 +34,7 @@ node bin/gws-mcp --services drive
 ### Windows
 
 ```powershell
-git clone <this-repo> gws-project
+git clone https://github.com/kazumasakawahara/gws-project.git
 cd gws-project
 
 # 動作確認

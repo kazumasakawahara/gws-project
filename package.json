@@ -23,5 +23,21 @@
     "claude",
     "gemini"
   ],
-  "license": "MIT"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kazumasakawahara/gws-project.git"
+  },
+  "homepage": "https://github.com/kazumasakawahara/gws-project#readme",
+  "bugs": {
+    "url": "https://github.com/kazumasakawahara/gws-project/issues"
+  },
+  "author": "Kazumasa Kawahara",
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "src/",
+    "config/",
+    "LICENSE",
+    "README.md"
+  ]
 }
