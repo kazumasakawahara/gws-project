@@ -454,8 +454,10 @@ gws-mcp-server が Google のサービスにアクセスするために、自分
    ✅ 認証情報はパソコンのローカルに保存されます。
 
    保存先:
-   - **Mac**: `~/.config/gws/credentials.json`
-   - **Windows**: `%APPDATA%\gws\credentials.json`
+   - **Mac**: `~/.config/gws/credentials.enc`（暗号化済み）
+   - **Windows**: `%APPDATA%\gws\credentials.enc`（暗号化済み）
+
+   > 💡 最近のバージョンの Google Workspace CLI では、認証情報は `credentials.enc` として暗号化保存されます（暗号化キーは `.encryption_key`）。平文の `credentials.json` は生成されません。
 
 ---
 
@@ -884,7 +886,7 @@ node bin/gws-mcp --log-level debug --services drive
 
 **A.** はい、安全です。gws-mcp-server は以下の仕組みで動作しています。
 
-- 認証情報（credentials）はあなたのパソコンのローカルにのみ保存されます。
+- 認証情報（credentials）はあなたのパソコンのローカルに暗号化された状態で保存されます。
 - 第三者のサーバーにデータが送信されることはありません。
 - Google の公式 API を通じてデータにアクセスするため、Google のセキュリティ基準が適用されます。
 - AI エージェント（Claude や Gemini）とのやり取りは、各サービスのプライバシーポリシーに従います。
