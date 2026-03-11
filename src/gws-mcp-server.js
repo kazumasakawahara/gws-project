@@ -64,10 +64,16 @@ function start(argv = []) {
   preflight(config, logger);
 
   // Spawn the gws binary with controlled stdio
-  const env = {
-    ...process.env,
-    GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE: config.credentials,
-  };
+  // Only set credentials env var if explicitly provided (CLI arg, env var, or config file).
+  // When omitted, let the gws binary use its own default credential resolution
+  // (which supports encrypted credentials).
+  const env = { ...process.env };
+  if (
+    process.env.GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE ||
+    argv.includes("--credentials")
+  ) {
+    env.GOOGLE_WORKSPACE_CLI_CREDENTIALS_FILE = config.credentials;
+  }
 
   const child = spawn(binaryPath, ["mcp", "-s", config.services], {
     stdio: ["pipe", "pipe", "pipe"],

@@ -1,0 +1,22 @@
+{
+  "requests": [
+    {
+      "updateSheetProperties": {
+        "properties": {
+          "sheetId": 0,
+          "title": "名簿"
+        },
+        "fields": "title"
+      }
+    },
+    {
+      "updateSheetProperties": {
+        "properties": {
+          "sheetId": 1223556218,
+          "title": "活動の足跡"
+        },
+        "fields": "title"
+      }
+    }
+  ]
+}

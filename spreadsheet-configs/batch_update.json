@@ -1,0 +1,20 @@
+{
+  "requests": [
+    {
+      "updateSheetProperties": {
+        "properties": {
+          "sheetId": 0,
+          "title": "Cases"
+        },
+        "fields": "title"
+      }
+    },
+    {
+      "addSheet": {
+        "properties": {
+          "title": "Events"
+        }
+      }
+    }
+  ]
+}

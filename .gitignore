@@ -3,5 +3,20 @@ node_modules/
 .DS_Store
 gws-mcp.config.json
 
-# Claude Code local settings
+# IDE / エディタ
+.vscode/
+.idea/
+
+# Claude Code
 .claude/settings.local.json
+
+# MCP ローカル設定
+.mcp.json
+.serena/
+.playwright-mcp/
+
+# clasp 認証（グローバル設定）
+.clasprc.json
+
+# GAS アーカイブ（バックアップ・デプロイ用）
+gas/*/archive/
